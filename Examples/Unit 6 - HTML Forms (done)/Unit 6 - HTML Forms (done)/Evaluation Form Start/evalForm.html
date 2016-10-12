@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Brent Presley">
+	<meta name="description" content="Evaluation Form">
+	<meta name="keywords" content="form, input">
+
+	<title>Evaluation Form</title>
+
+	<script type="text/javascript">
+		var $ = function(id) 
+		{	return document.getElementById(id);	
+			
+		}//end $
+		window.onload = function() 
+		{
+			$("frmEvaluation").reset(); //Clear previous entries in FF
+		}
+
+	</script>
+	
+	<link href="css/forms.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body {
+			margin:0px;
+			background-color:powderblue;
+			
+		}
+	
+		.title {
+			text-align:center;
+		}
+		
+		.courseName {
+			text-align:center; 
+			font-style:italic; 
+			color:blue; 
+			margin-top: 0px;
+			padding-top:25px;
+		}
+		
+		form {
+			clear:both;
+			margin-top:25px;
+		}
+		
+		
+		
+	</style>
+	
+</head>
+
+<body>
+	<img src="images/eval.jpg" alt="Evaluation logo" width="300" height="152" style="float:left;">
+	<img src="images/eval.jpg" alt="Evaluation logo" width="300" height="152" style="float:right">
+
+	<h3 class="courseName">Web Programming</h3>
+	<h1 class="title">Course Evaluation Form</h1>
+	
+	<!--form id="frmEvaluation" name="frmEvaluation"
+		  class='formStyle'
+	      method="post" action="http://www.volkergaul.com/MSTC/HTMLFormTest.php"-->
+	<form id="frmEvaluation" name="frmEvaluation" class='formStyle' method="post" action="http://mstc.brentapresley.com/HTMLFormTest.php">
+		<input type="hidden" id="validated" name="validated" value="false">
+
+		<label for="txtUserName">User name:</label>
+		<input id="txtUserName" name="userName" type="text" tabindex="1" size="50" maxlength="50"  placeholder="Enter a name" autofocus required autocomplete="off" >
+		<br>
+		
+		<label for="dtpDate">Enter a date:</label>
+		<input id="dtpDate" name="aDate" type='date' tabindex="3" size="50" min="2012-01-01" max="2014-01-01" placeholder="Enter a date (yyyy-mm-dd) here" >
+		<br>
+		
+		<label for="txtNumber">Enter a number:</label>
+		<input id="txtNumber" name="aNumber" type=number tabindex="2" size="50" min="1" max="10" step=".1" title="Enter a number between 1 and 10" placeholder="Enter a number (1-10) here" >
+		<br>
+		
+		<label for="txtUrl">Favorite website:</label>
+		<input id="txtUrl" name="Url" type="text" list="url_list" >
+		<datalist id="url_list">
+			<option value="http://www.google.com" label="Google">
+			<option value="http://www.ebay.com" label="E-Bay">
+		</datalist>
+		<br>
+		
+		<label for="txtWhy">Why is this your favorite?:</label>
+		<textarea id="txtWhy" name="whyFavorite" rows="10" cols="50" placeholder="Cuz it rocks."></textarea>
+		<br>
+		
+		<label for="txtPassword">Password:</label>
+		<input id="txtPassword" name="password" type="password" size="50" placeholder="Enter password here" >
+		<br>
+		
+		<label for="chkEnough">Had enough yet?</label>
+		<input id="chkEnough" name="enough" type="checkbox" value="Tired" checked>
+		<br>
+		
+		<label>Pick your favorite color:</label>
+		<fieldset style="width:50%">
+			<legend>Pick a color</legend>
+			<input type="radio" id="rdoRed" name="favColor" value="red" accesskey="R">
+			<label for="rdoRed" class="flowLabel"><span style="text-decoration:underline">R</span>ed</label>
+			<input type="radio" id="rdoGreen" name="favColor" value="green">
+			<label for="rdoGreen" class="flowLabel">Green</label>
+			<input type="radio" id="rdoBlue" name="favColor" value="blue" checked>
+			<label for="rdoBlue" class="flowLabel">Blue</label>
+		</fieldset>
+		<br>
+		
+		<label>Select your favorite class combobox:</label>
+		<select id="cmbFavClass" name="favClass">
+			<option>Make a selection</option>
+			<option value="1">RDD</option>
+			<option value="2">Programming Logic</option>
+			<option value="3">Web Programming</option>
+			<option value="4">Android Programming</option>
+		</select>
+
+		<br>
+		<label>Select your favorite class listbox multiple select:</label>
+		<select id="lstboxFavClass" size="4" multiple name="secondFavClass[]">
+			<option selected disabled>Make a selection</option>
+			<option value="1">RDD</option>
+			<option value="2">Programming Logic</option>
+			<option value="3">Web Programming</option>
+			<option value="4">Android Programming</option>
+		</select>
+
+		<br>
+		
+		<label>&nbsp;</label>
+		<button type="submit" id="btnEngage" name="btnEngage">
+			Engage <img src="images/dbpost.gif" alt="" width="16" height="16">
+		</button>
+		<button type="reset" id="btnReset">
+			Reset the form<img src="images/undo.gif" alt="" width="16" height="16">
+		</button>
+		<br>
+		<input type="image" id="btnPicture" name="btnPicture"
+			src="images/submitButton.gif" alt="Submit button" width="89" height="22">
+		<button id="btnPicture2" type="submit"><img src="images/submitButton.gif" name="imagesubmit" alt="imagesubmit">
+
+		</button>
+		
+	</form>
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+.body
+{
+    background-color: powderblue;
+    margin:0px;
+    
+}
+
+.formDiv
+{
+    display: block;
+    text-align: center;
+}
+
+.rightPicture
+{
+    background-color:powderblue;
+}
+
+.leftPicture
+{
+    background-color: powderblue;
+}
+
+
+
+.formStyle,input, textarea, select, button
+{
+	margin-bottom:10px;
+	font-family: sans-serif ,serif;
+	font-size: 100%;
+}
+
+.formStyle,input
+{
+	float:none;
+}
+
+.checkbox 
+{
+	margin-left: 0px  
+}
+.formStyle,br 
+{
+	clear:both;
+	
+}
+
+.formStyle,img 
+{
+	margin-left: 5px; /* for error icons */
+    vertical-align:top;
+}
+
+.formStyle,button
+{
+	margin-right:0px;
+}
+
+
+

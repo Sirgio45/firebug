@@ -1,0 +1,64 @@
+/*radio button style*/
+.formStyle .flowLabel
+{
+	float:none;
+	width:0px;
+	text-align:left; 
+}
+
+.formStyle label 
+{
+	text-align:right;
+	float: left;
+	vertical-align:top;
+	width: 175px;  
+	padding-right: 10px;
+	padding-top: 5px;
+}
+	
+.formStyle  input, textarea, select, button
+{
+	margin-bottom:10px;
+	font-family: Times New Roman, serif;
+	font-size: 100%;
+}
+
+/*radio buttons*/
+.formStyle fieldset input
+{
+	float:none;
+}
+
+.checkbox 
+{
+	margin-left: 0px  
+}
+.formStyle br 
+{
+	clear:both;
+	
+}
+
+.formStyle  img 
+{
+	margin-left: 5px; /* for error icons */
+    vertical-align:top;
+}
+
+.formStyle button
+{
+	margin-right:0px;
+}
+
+#btnPicture
+{
+	float: none;
+	margin:0 0 0 185px;
+}
+
+#btnPicture2
+{
+border:0px;
+background:none;
+}
+

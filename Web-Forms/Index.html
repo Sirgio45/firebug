@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Sergio Ochoa">
+	<meta name="description" content="Evaluation Form">
+	<meta name="keywords" content="Evaluation,Form,HomeWork">
+	
+	<title>Donation Form</title>
+	
+	<script type="text/javascript">
+		var $ = function(id) 
+		{	return document.getElementById(id);	
+			
+		}//end $
+		window.onload = function() 
+		{
+			$("frmEvaluation").reset(); //Clear previous entries in FF
+		}
+
+	</script>
+	
+	<link rel="stylesheet" href="CSS/Index.CSS" type="text/css" />
+	
+	<style type="text/css">
+	    
+	  
+	
+	.title
+	  {
+		text-align:center;
+	      
+	  }
+		
+	.courseName 
+	    {
+			text-align:center; 
+			font-style:italic; 
+			color:blue; 
+			margin-top: 0px;
+			padding-top:25px;
+		}
+		
+	.form 
+		{
+			clear:both;
+			margin-top:25px;
+		
+		}
+	    
+	    fieldset
+	    {
+	        margin:auto;
+	    }
+	    
+	    
+	</style>
+	
+	
+	
+	
+</head>
+
+<body class="body">
+    
+    <img class="leftPicture" src="Image/donate.png" alt="non Profit Picture" width="300" height="152" style="float:left;"/>
+	<img class="rightPicture" src="Image/donate.png" alt="non-profit Picture" width="300" height="152" style="float:right"/>
+    
+    <h3 class="courseName">Foundation Form</h3>
+	<h1 class="title">Non-Profit Donation Form</h1>
+    
+    <div class= "formDiv">
+    <form id="frmEvaluation" name="frmEvaluation" class='formStyle' method="post" action="http://www.volkergaul.com/MSTC/HTMLFormTest.php">
+	<input type="hidden" id="validated" name="sendingForm" value="Fall Pledge Drive">
+	
+	<label for="txtFirstName">First Name:</label>
+	<input id="txtFirstName" name="firstName" type="text" tabindex="1" size="50" maxlength="50"  placeholder="Enter First Name" autofocus required autocomplete="off" >
+	<br>
+    
+    <label for="txtLastName">Last Name:</label>
+    <input id="txtLastName" name="lastName" type="text" tabindex="1" size="50" maxlength="50" placeholder="Enter Last Name" required autocomplete="off"/>
+    <br>
+    
+    <label for="dateBox">Enter Date:</label>
+	<input id="dateBox" name="date" type='date' tabindex="3" size="60" min="1994-01-01" max="2016-12-31">
+	<br>
+	
+	<label for="contributionAmountTxtBox">Enter Amount:</label>
+	<input id="contributionAmountTxtBox" name="amount" type="number" tabindex="2" size="50" min="0" max="100" step="1" placeholder="$" Title="Enter Amount to donate"/>
+	<br>
+	
+		<label>Pick your Organization:</label>
+		
+		<fieldset style="width:70%">
+			<legend>Choose one organization</legend>
+			<input type="radio" id="radioOne" name="choiceOrganization" value="Human Society" accesskey="H">
+			<label for="radioOne" class="radioLabel"><span style="text-decoration:underline">H</span>uman Society</label>
+			<input type="radio" id="radioTwo" name="choiceOrganization" value="Food Pantry" accesskey="F" checked>
+			<label for="radioTwo" class="radioLabel"><span style="text-decoration:underline">F</span>ood Pantry</label>
+			<input type="radio" id="radioThree" name="choiceOrganization" value="Stuff The Bus" accesskey="S">
+			<label for="radioThree" class="radioLabel"><span style="text-decoration:underline">S</span>tuff The Bus</label>
+		</fieldset>
+
+		<br>
+    
+    
+    <label for="checkOldEnough">Are you 18 or older?</label>
+    <br>
+    <label for="checkOldEnough">Yes</label>
+	<input id="checkOldEnough" name="oldEnough" type="checkbox" value="Yes">
+	<label for="checkOldEnoughNo">No</label>
+	<input id="checkOldEnoughNo" name="oldEnoughNo" type="checkbox" value="No">
+	<br>
+	
+		<label>Select Town:</label>
+		<select id="comboTown" name="comboTown">
+			<option>Town Selection</option>
+			<option value="1 Rapids">Wisconsin Rapids</option>
+			<option value="2 Nekoosa">Nekoosa</option>
+			<option value="3 Plover">Plover</option>
+			<option value="4 Point">Stevens Point</option>
+			<option value="5 Wausau">Wausau</option>
+		</select>
+		<br>
+		
+		<label>Select your Zip Code:</label>
+		<br>
+		<select id="listboxZipCode" size="5" multiple name="secondZipCode[]">
+			<option selected disabled>Make a selection</option>
+			<option value="1 Rapids Code">54494 </option>
+			<option value="2 Nekoosa Code">54457</option>
+			<option selected value="3 Plover Code">54467</option>
+			<option value="4 Point Code">54481</option>
+			<option value="5 Wausau Code">54401</option>
+		</select>
+		<br>
+		
+	<label for="commentTextBox">Why did you choose this organization?:</label>
+	<br>
+	<textarea id="commentTextBox" name="commentBox" rows="10" cols="50" placeholder="Short explanation."></textarea>
+	<br>
+	
+    <button type="submit" id="submitButton" name="submitButton">
+	Submit<img src="Image/go.png" alt="submit button picture" width="20" height="20">
+	</button>
+	
+	<button type="reset" id="resetButton">
+	Reset the form<img src="Image/reset.png" alt="reset button picture" width="20" height="20">
+	</button>
+	
+	</form>
+	</div>
+	    
+	
+    
+    
+    
+
+</body>
+</html>

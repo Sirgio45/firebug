@@ -1,0 +1,41 @@
+/* css comment */
+h3 {text-align:center; }
+
+hr {width:80%;}
+
+.shadedgrey {background-color: grey;}
+
+#title {color:maroon;}
+
+.notesImage {margin: 5px;}
+
+ol li a:link {color:darkred;
+    }
+ol li a:visited {color:green;
+}
+ol li a:hover {color:hotpink;
+}
+
+p.fancyParagraph {
+    /*
+    whatever fancy effect you would like in here.s
+    */
+    font-style: oblique;
+    font-family: "Century Gothic";
+}
+
+/* p {background-image: url(../images/TextureClouds.jpg); } */
+/* p {background-image: url('../images/Wicker Bkgd.jpg'); } */
+/* p {background-image: url('../images/Airplane1.gif'); background-position: 10px 10px; } */
+/* p {background-image: url('../images/Airplane1.gif'); background-position: 100px 100px; } */
+/* p {background-image: url(../images/TextureClouds.jpg); background-position: 1px 1px; } */
+/* p {background-image: url('../images/Wicker Bkgd.jpg'); background-position: 1px 1px; } */
+
+/* p {background-image: url('../images/Wicker Bkgd.jpg'); background-position: 10% 10%; } */
+/* body{background-image: url('../images/Wicker Bkgd.jpg'); background-attachment: fixed; } */
+/* body{background-image: url('../images/lvb.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; } */
+
+/* ol {background-image: url(../images/TextureClouds.jpg); } */
+/* ol {background-image: url('../images/Wicker Bkgd.jpg'); } */
+
+/* body{margin-left: 80px;} */

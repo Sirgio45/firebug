@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Volker Gaul">
+	<meta name="description" content="Firebug Lab">
+	<meta name="keywords" content="firebug">
+	
+	<title>An Addition Program</title>
+	<style type="text/css">
+		h1 {color:blue;}
+	</style>
+	
+	<script type="text/javascript">
+		var firstNumber;			//first string entered by user
+		var secondNumber;			//second string entered by user
+		var number1;				//first number to add
+		var number2;				//second number to add
+		var sum;						//Sum of numbers
+		
+		//Get the numbers from the user (strings)
+		firstNumber = prompt("Enter the first whole number:");
+		secondNumber = prompt("enter the second whole number:");
+		document.writeln("Value of first Number"+firstNumber+"  "+ "Value of second number"+secondNumber);
+		
+		
+		
+		
+		//Convert strings to integers
+		number1 = parseInt(firstNumber);
+		number2 = parseInt(secondNumber);
+		
+		sum = number1 + number2;
+		
+		//Display the results
+		document.writeln("<h1>" + firstNumber + " + " + secondNumber + " = " + sum + "</h1>");
+		
+	</script>
+</head>
+
+<body>
+	<p>Press F5 to run the program again.</p>
+</body>
+</html>

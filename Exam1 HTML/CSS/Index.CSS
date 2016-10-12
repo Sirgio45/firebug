@@ -1,0 +1,47 @@
+.picGru{
+    
+    border:1px dashed;
+    
+}
+
+.picSteve{
+    
+    margin: auto;
+}
+
+#gruPic{
+    float: right;
+}
+
+
+p{
+    font-size: 25px;
+    font-family: sans-serif, monospace;
+}
+
+body{
+  
+   background-image:url("http://img10.deviantart.net/11f3/i/2010/350/5/d/crumbled_paper_texture_by_stocksaphitri-d34zf05.png");
+   background-repeat:repeat;
+   background-attachment: fixed;/*keeps the background from scrolling*/
+}
+
+div{
+    border:dotted;
+}
+
+h1{
+color: red;
+}
+
+li{
+    font-size:25px;
+    font-family: fantasy,monospace;
+}
+
+.PageTitle{
+     text-align: center;
+    font-style: italic;
+    font-family: serif, sans-serif;
+    
+}

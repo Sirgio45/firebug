@@ -1,0 +1,94 @@
+.Background{
+    background-color: gray;
+}
+
+.Ticket{
+    
+    font-family: sans-serif;
+    color: lightgray;
+}
+
+.name{
+    color: white;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: x-large;
+}
+
+.parker{
+    
+    font-style: normal;
+}
+
+.green{
+    margin-left: 9.8em;
+}
+
+.email{
+    color: white;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: x-large;
+    
+}
+
+.seidel{
+    margin-left: 9.4em;
+    font-style: normal;
+}
+.Active{
+    margin-left: 12.6em;
+    color: red;
+    font-style: normal;
+}
+
+
+
+.response{
+    color: white;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: x-large;
+}
+
+.hours{
+    margin-left: 5em;
+    color:lightgray;
+    font-style: normal;
+}
+
+.lastAction{
+    color: white;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: x-large;
+}
+.Never{
+    color: lightgray;
+    margin-left: 5.8em;
+    font-style: normal;
+    
+}
+
+.Link{
+    color: white;
+    margin-left: 13em;
+    font-style: normal;
+    
+}
+
+.Status{
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+    font-style: oblique;
+    
+}
+
+.not{
+    color: orange;
+    margin-left: 8.6em;
+    font-style: normal;
+}
+
+
